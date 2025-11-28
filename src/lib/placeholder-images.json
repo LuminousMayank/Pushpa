@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "about-preview",
+      "description": "A modern office interior representing a corporate company.",
+      "imageUrl": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxvZmZpY2UlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjQzNDQ1OTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office interior"
+    },
+    {
+      "id": "industries-preview",
+      "description": "A large industrial factory, showing the scale of operations.",
+      "imageUrl": "https://images.unsplash.com/photo-1685746204661-b92400e9a79a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aW5kdXN0cmlhbCUyMGZhY3Rvcnl8ZW58MHx8fHwxNzY0Mjc3NDk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial factory"
+    },
+    {
+      "id": "products-preview",
+      "description": "A warehouse filled with shelves of spare parts.",
+      "imageUrl": "https://images.unsplash.com/photo-1632496497047-706290273235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzcGFyZSUyMHBhcnRzfGVufDB8fHx8MTc2NDM1ODE5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spare parts"
+    },
+    {
+      "id": "clients-preview",
+      "description": "A professional handshake, symbolizing a client partnership.",
+      "imageUrl": "https://images.unsplash.com/photo-1672380135241-c024f7fbfa13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxidXNpbmVzcyUyMGhhbmRzaGFrZXxlbnwwfHx8fDE3NjQzNDQ0NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business handshake"
+    },
+    {
+      "id": "defence-marine",
+      "description": "A naval ship at sea.",
+      "imageUrl": "https://images.unsplash.com/photo-1667809060037-e3e6d25520b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bmF2YWwlMjBzaGlwfGVufDB8fHx8MTc2NDMxNjUwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "naval ship"
+    },
+    {
+      "id": "steel-plants",
+      "description": "Interior of a steel plant with molten metal.",
+      "imageUrl": "https://images.unsplash.com/photo-1761414500570-0b835cdcf3c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdGVlbCUyMHBsYW50fGVufDB8fHx8MTc2NDM1ODE5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "steel plant"
+    },
+    {
+      "id": "cement-power",
+      "description": "A large cement factory with silos.",
+      "imageUrl": "https://images.unsplash.com/photo-1543304376-8f16c218aee5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjZW1lbnQlMjBmYWN0b3J5fGVufDB8fHx8MTc2NDM1ODE5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cement factory"
+    }
+  ]
 }

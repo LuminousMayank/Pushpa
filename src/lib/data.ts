@@ -1,0 +1,122 @@
+import { Cog, Anchor, Replace, Fan, SlidersHorizontal, Wrench, CircuitBoard, GitCommitHorizontal, LifeBuoy } from "lucide-react";
+import type { ClientCategory, Product, Industry } from "./types";
+
+export const clientCategories: ClientCategory[] = [
+    {
+        name: "Defence",
+        clients: [
+            { name: "Indian Navy, Mumbai" },
+            { name: "Indian Navy, Vizag" },
+            { name: "Indian Navy, Karwar" },
+            { name: "Indian Navy, Kochi" },
+            { name: "Indian Navy, Port Blair" },
+        ],
+    },
+    {
+        name: "Steel",
+        clients: [
+            { name: "Vizag Steel" },
+            { name: "Tata Steel" },
+            { name: "Bhilai Steel Plant" },
+            { name: "Bokaro Steel Plant" },
+            { name: "JSW Steel" },
+        ],
+    },
+    {
+        name: "Cement",
+        clients: [
+            { name: "Ultratech Cement" },
+            { name: "My Home Group" },
+            { name: "The RAMCO Cements" },
+            { name: "Dalmia Cement" },
+        ],
+    },
+];
+
+
+export const productCategories: Product[] = [
+    {
+      name: "OEM Spare Parts",
+      icon: Cog,
+      description: "Authentic, high-quality spare parts directly from original equipment manufacturers to ensure perfect fit and performance.",
+    },
+    {
+      name: "Marine Hoses",
+      icon: Anchor,
+      description: "Durable, certified marine hoses and fittings for all types of fluid transfer, built to withstand harsh maritime environments.",
+    },
+    {
+      name: "RAS Spares",
+      icon: Replace,
+      description: "Specialized spares for Replenishment-At-Sea (RAS) systems, crucial for naval and maritime support operations.",
+    },
+    {
+      name: "Pumps",
+      icon: Fan,
+      description: "A wide range of industrial pumps for various applications, including centrifugal, diaphragm, and submersible types.",
+    },
+    {
+      name: "Valves",
+      icon: SlidersHorizontal,
+      description: "High-performance industrial valves, including ball, gate, globe, and check valves for precise flow control.",
+    },
+    {
+      name: "Mechanical Equipment",
+      icon: Wrench,
+      description: "Comprehensive solutions for mechanical equipment, including gearboxes, couplings, bearings, and transmission systems.",
+    },
+    {
+      name: "Electrical Components",
+      icon: CircuitBoard,
+      description: "Reliable electrical components such as motors, switches, sensors, and control panels for industrial automation.",
+    },
+    {
+      name: "Hydraulic Systems",
+      icon: GitCommitHorizontal,
+      description: "Complete hydraulic systems and components, including cylinders, power packs, filters, and hydraulic fluids.",
+    },
+    {
+      name: "Safety &amp; Marine Supplies",
+      icon: LifeBuoy,
+      description: "A full range of safety equipment and general marine supplies to ensure operational safety and compliance.",
+    },
+  ];
+
+  export const industries: Industry[] = [
+    {
+      name: "Defence &amp; Marine",
+      description: "We are a key supplier to the nation's defence and maritime sectors, providing mission-critical components and robust equipment. Our deep understanding of stringent quality and reliability standards makes us a trusted partner for naval and shipyard operations.",
+      imageId: "defence-marine",
+      offerings: [
+        "Marine Hoses &amp; Fittings",
+        "Underway Replenishment (UNREP) Products",
+        "RAS/FAS Spares &amp; Systems",
+        "Naval-grade pumps, valves, and actuators",
+        "Specialized safety and survival equipment"
+      ]
+    },
+    {
+      name: "Steel Plants",
+      description: "Our procurement solutions help keep the heart of the steel industry beating. We supply high-temperature, heavy-duty OEM spares and equipment designed to withstand the extreme conditions of steel manufacturing, minimizing downtime and maximizing output.",
+      imageId: "steel-plants",
+      offerings: [
+        "Refractory materials and furnace spares",
+        "Heavy-duty gearboxes and motors",
+        "Rolling mill bearings and components",
+        "Conveyor systems and spares",
+        "High-pressure hydraulic systems"
+      ]
+    },
+    {
+      name: "Cement &amp; Power",
+      description: "For the cement and power generation industries, reliability is non-negotiable. We provide durable, high-performance components that ensure continuous, efficient operation, from raw material handling to power distribution.",
+      imageId: "cement-power",
+      offerings: [
+        "Crusher and grinder components",
+        "Kiln and cooler spares",
+        "Turbine and generator parts",
+        "Boiler components and fittings",
+        "Emission control and monitoring equipment"
+      ]
+    }
+  ];
