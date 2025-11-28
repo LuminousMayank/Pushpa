@@ -26,7 +26,7 @@ export default function ProductsPage() {
               >
                 <CardHeader>
                   <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                    {category.icon &amp;&amp; (
+                    {category.icon && (
                       <category.icon className="h-8 w-8" />
                     )}
                   </div>
