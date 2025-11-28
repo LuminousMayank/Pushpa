@@ -10,8 +10,7 @@ export default function ContactPage() {
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
             Tell us what you need, and our team will get back to you with a
-            competitive quote. Use our AI Assistant for help crafting the
-            perfect request.
+            competitive quote.
           </p>
         </div>
       </section>

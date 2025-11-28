@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Loader2, Sparkles, FileUp, Wand2 } from 'lucide-react';
+import { Loader2, FileUp } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import {
@@ -25,9 +25,8 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
-import { getRfqSuggestions } from '@/lib/actions';
 import { industries } from '@/lib/data';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import { Card, CardContent } from './ui/card';
 
 const rfqFormSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -44,10 +43,7 @@ type RfqFormValues = z.infer<typeof rfqFormSchema>;
 export function RfqForm() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuggestionLoading, setIsSuggestionLoading] = useState(false);
-  const [suggestion, setSuggestion] = useState('');
   const [file, setFile] = useState<File | null>(null);
-  const [fileDataUri, setFileDataUri] = useState<string | null>(null);
 
   const form = useForm<RfqFormValues>({
     resolver: zodResolver(rfqFormSchema),
@@ -64,68 +60,11 @@ export function RfqForm() {
     const selectedFile = event.target.files?.[0];
     if (selectedFile) {
       setFile(selectedFile);
-      const reader = new FileReader();
-      reader.onload = (loadEvent) => {
-        setFileDataUri(loadEvent.target?.result as string);
-      };
-      reader.readAsDataURL(selectedFile);
     } else {
       setFile(null);
-      setFileDataUri(null);
     }
   };
 
-  const handleGetSuggestions = async () => {
-    const isFormValid = await form.trigger(['name', 'company', 'email', 'phone', 'sector', 'message']);
-    if (!isFormValid) {
-      toast({
-        title: 'Incomplete Form',
-        description: 'Please fill out all required fields before getting suggestions.',
-        variant: 'destructive',
-      });
-      return;
-    }
-
-    setIsSuggestionLoading(true);
-    setSuggestion('');
-    try {
-      const formData = form.getValues();
-      const result = await getRfqSuggestions({
-        ...formData,
-        fileDataUri: fileDataUri ?? undefined,
-      });
-
-      if (result.success && result.suggestions) {
-        setSuggestion(result.suggestions);
-        toast({
-          title: 'AI Suggestions Ready!',
-          description: 'We\'ve generated suggestions to improve your RFQ.',
-        });
-      } else {
-        throw new Error(result.error || 'Failed to get suggestions.');
-      }
-    } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred.';
-      toast({
-        title: 'Error',
-        description: errorMessage,
-        variant: 'destructive',
-      });
-    } finally {
-      setIsSuggestionLoading(false);
-    }
-  };
-
-  const applySuggestion = () => {
-    if (suggestion) {
-      form.setValue('message', suggestion, { shouldValidate: true });
-      setSuggestion('');
-      toast({
-        title: 'Suggestion Applied',
-        description: 'The AI-generated message has been applied.',
-      });
-    }
-  };
 
   const onSubmit = (data: RfqFormValues) => {
     setIsSubmitting(true);
@@ -138,7 +77,6 @@ export function RfqForm() {
     setTimeout(() => {
       form.reset();
       setFile(null);
-      setFileDataUri(null);
       setIsSubmitting(false);
     }, 2000);
   };
@@ -246,27 +184,10 @@ export function RfqForm() {
               )}
             />
 
-            {suggestion &amp;&amp; (
-              <Card className="bg-primary/5 border-primary/20">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-lg text-primary">
-                    <Sparkles className="h-5 w-5" />
-                    AI Suggestion
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="mb-4 text-foreground">{suggestion}</p>
-                  <Button type="button" onClick={applySuggestion} size="sm">
-                    Apply Suggestion
-                  </Button>
-                </CardContent>
-              </Card>
-            )}
-
             <FormField
               control={form.control}
               name="file"
-              render={({ field }) => (
+              render={() => (
                 <FormItem>
                   <FormLabel>Attach File (Optional)</FormLabel>
                   <FormControl>
@@ -291,26 +212,7 @@ export function RfqForm() {
               )}
             />
 
-            <div className="flex flex-col gap-4 sm:flex-row sm:justify-between">
-              <Button
-                type="button"
-                variant="outline"
-                onClick={handleGetSuggestions}
-                disabled={isSuggestionLoading}
-                className="w-full sm:w-auto"
-              >
-                {isSuggestionLoading ? (
-                  <>
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    Generating...
-                  </>
-                ) : (
-                  <>
-                    <Wand2 className="mr-2 h-4 w-4" />
-                    AI Assistant
-                  </>
-                )}
-              </Button>
+            <div className="flex justify-end">
               <Button
                 type="submit"
                 disabled={isSubmitting}
