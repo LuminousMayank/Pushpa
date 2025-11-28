@@ -13,7 +13,7 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/industries', label: 'Industries' },
-  { href: '/products', label: 'Products &amp; Services' },
+  { href: '/products', label: 'Products & Services' },
   { href: '/clients', label: 'Clients' },
 ];
 
@@ -40,7 +40,7 @@ export function Header() {
         <Link href="/" className="mr-6 flex items-center gap-2">
           <Ship className="h-6 w-6 text-primary" />
           <span className="font-bold sm:inline-block">
-            Pushpa Global Sourcing
+            Pushpa &amp; Co.
           </span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
@@ -68,7 +68,7 @@ export function Header() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <Ship className="h-6 w-6 text-primary" />
-                <span className="font-bold">Pushpa Global</span>
+                <span className="font-bold">Pushpa &amp; Co.</span>
               </Link>
               <div className="flex h-full flex-col justify-between pb-10">
                 <nav className="mt-8 flex flex-col gap-6">

@@ -6,7 +6,7 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
 export const metadata: Metadata = {
-  title: 'Pushpa Global Sourcing | Trusted Procurement & OEM Parts Supply',
+  title: 'Pushpa & Co. | Trusted Procurement & OEM Parts Supply',
   description:
     'Over 30 years of trusted global procurement and OEM spare parts supply for Defence, Marine, Steel, Cement, and Power industries.',
 };

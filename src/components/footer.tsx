@@ -17,7 +17,7 @@ export function Footer() {
           <div className="flex flex-col items-center gap-4 md:items-start">
             <Link href="/" className="flex items-center gap-2">
               <Ship className="h-7 w-7 text-primary" />
-              <span className="text-xl font-bold">Pushpa Global Sourcing</span>
+              <span className="text-xl font-bold">Pushpa &amp; Co.</span>
             </Link>
             <p className="text-sm text-muted-foreground">
               Your trusted partner in global procurement since 1994.
