@@ -34,7 +34,7 @@ export default function IndustriesPage() {
                   className={`grid items-center gap-8 md:grid-cols-2 md:gap-16`}
                 >
                   <div className={`relative h-80 w-full md:h-[450px] ${isReversed ? 'md:order-last' : ''}`}>
-                    {image &amp;&amp; (
+                    {image && (
                       <Image
                         src={image.imageUrl}
                         alt={image.description}
@@ -52,7 +52,7 @@ export default function IndustriesPage() {
                     <p className="text-lg text-muted-foreground">
                       {industry.description}
                     </p>
-                    {industry.offerings &amp;&amp; (
+                    {industry.offerings && (
                        <ul className="space-y-3">
                         {industry.offerings.map((offering) => (
                           <li key={offering} className="flex items-start">
