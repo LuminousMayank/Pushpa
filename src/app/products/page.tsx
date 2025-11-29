@@ -7,7 +7,7 @@ export default function ProductsPage() {
       <section className="bg-card py-20 md:py-32">
         <div className="container mx-auto text-center">
           <h1 className="font-headline text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl">
-            Comprehensive Products &amp; Services
+            Comprehensive Products & Services
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
             Explore our extensive range of high-quality OEM spare parts and

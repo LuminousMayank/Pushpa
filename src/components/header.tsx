@@ -41,7 +41,7 @@ export function Header() {
         <Link href="/" className="mr-6 flex items-center gap-2">
           <Ship className="h-6 w-6 text-primary" />
           <span className="font-bold sm:inline-block">
-            Pushpa &amp; Co.
+            Pushpa & Co.
           </span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
@@ -71,7 +71,7 @@ export function Header() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <Ship className="h-6 w-6 text-primary" />
-                <span className="font-bold">Pushpa &amp; Co.</span>
+                <span className="font-bold">Pushpa & Co.</span>
               </Link>
               <div className="flex h-full flex-col justify-between pb-10">
                 <nav className="mt-8 flex flex-col gap-6">

@@ -27,7 +27,7 @@ const timeline = [
     year: '1994',
     title: 'Company Founded',
     description:
-      'Pushpa &amp; Co. was established with a mission to simplify industrial procurement for key sectors in India.',
+      'Pushpa & Co. was established with a mission to simplify industrial procurement for key sectors in India.',
   },
   {
     year: '2002',
@@ -37,7 +37,7 @@ const timeline = [
   },
   {
     year: '2010',
-    title: 'Steel &amp; Cement Sector Dominance',
+    title: 'Steel & Cement Sector Dominance',
     description:
       'Established strong partnerships with leading steel and cement plants, providing essential OEM spares and equipment.',
   },

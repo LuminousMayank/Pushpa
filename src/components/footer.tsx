@@ -17,7 +17,7 @@ export function Footer() {
           <div className="flex flex-col items-center gap-4 md:items-start">
             <Link href="/" className="flex items-center gap-2">
               <Ship className="h-7 w-7 text-primary" />
-              <span className="text-xl font-bold">Pushpa &amp; Co.</span>
+              <span className="text-xl font-bold">Pushpa & Co.</span>
             </Link>
             <p className="text-sm text-muted-foreground">
               Your trusted partner in global procurement since 1994.
@@ -37,7 +37,7 @@ export function Footer() {
         </div>
         <div className="mt-8 border-t border-border/40 pt-8 text-center text-sm text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} Pushpa &amp; Co. All rights reserved.
+            &copy; {new Date().getFullYear()} Pushpa & Co. All rights reserved.
           </p>
         </div>
       </div>

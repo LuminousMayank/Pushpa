@@ -76,7 +76,7 @@ export const productCategories: Product[] = [
       description: "Complete hydraulic systems and components, including cylinders, power packs, filters, and hydraulic fluids.",
     },
     {
-      name: "Safety &amp; Marine Supplies",
+      name: "Safety & Marine Supplies",
       icon: LifeBuoy,
       description: "A full range of safety equipment and general marine supplies to ensure operational safety and compliance.",
     },
@@ -84,13 +84,13 @@ export const productCategories: Product[] = [
 
   export const industries: Industry[] = [
     {
-      name: "Defence &amp; Marine",
+      name: "Defence & Marine",
       description: "We are a key supplier to the nation's defence and maritime sectors, providing mission-critical components and robust equipment. Our deep understanding of stringent quality and reliability standards makes us a trusted partner for naval and shipyard operations.",
       imageId: "defence-marine",
       offerings: [
-        "Marine Hoses &amp; Fittings",
+        "Marine Hoses & Fittings",
         "Underway Replenishment (UNREP) Products",
-        "RAS/FAS Spares &amp; Systems",
+        "RAS/FAS Spares & Systems",
         "Naval-grade pumps, valves, and actuators",
         "Specialized safety and survival equipment"
       ]
@@ -108,7 +108,7 @@ export const productCategories: Product[] = [
       ]
     },
     {
-      name: "Cement &amp; Power",
+      name: "Cement & Power",
       description: "For the cement and power generation industries, reliability is non-negotiable. We provide durable, high-performance components that ensure continuous, efficient operation, from raw material handling to power distribution.",
       imageId: "cement-power",
       offerings: [

@@ -43,7 +43,7 @@ export default function Home() {
       <section className="relative flex min-h-[60dvh] w-full flex-col items-center justify-center bg-card px-4 py-20 text-center md:min-h-[70dvh] md:px-6">
         <div className="container mx-auto max-w-4xl space-y-6">
           <h1 className="font-headline text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-            30+ Years of Trusted Global Procurement &amp; OEM Spare Parts Supply
+            30+ Years of Trusted Global Procurement & OEM Spare Parts Supply
           </h1>
           <p className="mx-auto max-w-[700px] text-lg text-muted-foreground md:text-xl">
             Reliable sourcing for Defence, Marine, Steel, Cement and Power
