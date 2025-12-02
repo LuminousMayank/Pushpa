@@ -1,4 +1,4 @@
-import { clientCategories } from '@/lib/data';
+import { clientCategories } from '@/lib/data.tsx';
 import { Card } from '@/components/ui/card';
 
 export default function ClientsPage() {

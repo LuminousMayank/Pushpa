@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { CheckCircle } from 'lucide-react';
-import { industries } from '@/lib/data';
+import { industries } from '@/lib/data.tsx';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function IndustriesPage() {

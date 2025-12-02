@@ -25,7 +25,7 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
-import { industries } from '@/lib/data';
+import { industries } from '@/lib/data.tsx';
 import { Card, CardContent } from './ui/card';
 
 const rfqFormSchema = z.object({

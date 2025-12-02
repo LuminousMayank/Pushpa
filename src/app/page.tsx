@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ClientMarquee } from '@/components/client-marquee';
-import { clientCategories } from '@/lib/data';
+import { clientCategories } from '@/lib/data.tsx';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const previewSections = [

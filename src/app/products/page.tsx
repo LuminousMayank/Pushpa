@@ -1,4 +1,4 @@
-import { productCategories } from '@/lib/data';
+import { productCategories } from '@/lib/data.tsx';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function ProductsPage() {
