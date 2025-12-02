@@ -5,19 +5,15 @@ export const clientCategories: ClientCategory[] = [
     {
         name: "Defence",
         clients: [
-            { name: "Indian Navy, Mumbai", logoUrl: "/logos/indian-navy.svg" },
-            { name: "Indian Navy, Vizag", logoUrl: "/logos/indian-navy.svg" },
-            { name: "Indian Navy, Karwar", logoUrl: "/logos/indian-navy.svg" },
-            { name: "Indian Navy, Kochi", logoUrl: "/logos/indian-navy.svg" },
-            { name: "Indian Navy, Port Blair", logoUrl: "/logos/indian-navy.svg" },
+            { name: "Indian Navy", logoUrl: "/logos/indian-navy.svg" },
         ],
     },
     {
         name: "Steel",
         clients: [
             { name: "Vizag Steel", logoUrl: "/logos/vizag-steel.png" },
-            { name: "Tata Steel", logoUrl: "/logos/tata-steel.png" },
             { name: "Bhilai Steel Plant", logoUrl: "/logos/sail.svg" },
+            { name: "Tata Steel", logoUrl: "/logos/tata-steel.png" },
             { name: "Bokaro Steel Plant", logoUrl: "/logos/sail.svg" },
             { name: "JSW Steel", logoUrl: "/logos/jsw-steel.png" },
         ],
