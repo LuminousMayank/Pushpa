@@ -6,19 +6,19 @@ const values = [
     icon: <Target className="h-10 w-10 text-primary" />,
     title: 'Unwavering Reliability',
     description:
-      'We build trust through consistent, on-time delivery and transparent communication, ensuring your operations never falter.',
+      'As a trustworthy and efficient partner, we build trust through consistent, on-time delivery and transparent communication, ensuring your operations never falter.',
   },
   {
     icon: <Globe className="h-10 w-10 text-primary" />,
     title: 'Global Sourcing Expertise',
     description:
-      'Our extensive international network allows us to source high-quality, authentic parts from anywhere in the world, efficiently and effectively.',
+      'Based in India with a vast network of suppliers, we offer the benefits of a worldwide sourcing operation, finding the right products at competitive prices.',
   },
   {
     icon: <Users className="h-10 w-10 text-primary" />,
-    title: 'Customer-Centric Approach',
+    title: 'Customer-Centric Procurement',
     description:
-      'Your success is our priority. We work closely with you to understand your unique needs and provide tailored procurement solutions.',
+      'We aim to provide the best, most efficient, and economic procurement experience, leveraging our deep product knowledge to meet your unique needs.',
   },
 ];
 
@@ -29,12 +29,10 @@ export default function AboutPage() {
       <section className="bg-card py-20 md:py-32">
         <div className="container mx-auto text-center">
           <h1 className="font-headline text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl">
-            Pioneering Procurement for Over 30 Years
+            30 Years of Global Procurement Excellence
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
-            From humble beginnings to a global force in industrial supply, our
-            journey is defined by a relentless pursuit of excellence and a deep
-            commitment to the industries we serve.
+            With three decades of experience, our in-depth supply knowledge and sourcing capabilities have set the industry standard for service and efficiency.
           </p>
         </div>
       </section>
