@@ -2,6 +2,7 @@ import type { LucideIcon } from "lucide-react";
 
 export interface Client {
   name: string;
+  logo: React.ReactNode;
 }
 
 export interface ClientCategory {
