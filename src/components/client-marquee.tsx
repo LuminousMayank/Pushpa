@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import type { Client } from '@/lib/types';
 
@@ -15,7 +16,15 @@ export function ClientMarquee({ clients, className }: ClientMarqueeProps) {
     <div className="flex min-w-full shrink-0 items-center justify-around gap-12">
       {clients.map((client, index) => (
         <div key={index} className="flex items-center justify-center gap-4">
-          {client.logo}
+          <div className="relative h-10 w-24">
+            <Image
+              src={client.logoUrl}
+              alt={`${client.name} logo`}
+              fill
+              className="object-contain"
+              sizes="10vw"
+            />
+          </div>
           <span className="text-xl font-semibold text-muted-foreground transition-colors hover:text-foreground">
             {client.name}
           </span>

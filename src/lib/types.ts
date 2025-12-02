@@ -2,7 +2,7 @@ import type { LucideIcon } from "lucide-react";
 
 export interface Client {
   name: string;
-  logo: React.ReactNode;
+  logoUrl: string;
 }
 
 export interface ClientCategory {
@@ -17,7 +17,7 @@ export interface Product {
 }
 
 export interface Industry {
-    name: string;
+    name:string;
     description: string;
     imageId: string;
     offerings?: string[];
