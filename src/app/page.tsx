@@ -114,7 +114,7 @@ export default function Home() {
                     </Link>
                   </Button>
                 </CardContent>
-              </card>
+              </Card>
             ))}
           </div>
         </div>
