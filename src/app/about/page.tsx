@@ -22,39 +22,6 @@ const values = [
   },
 ];
 
-const timeline = [
-  {
-    year: '1994',
-    title: 'Company Founded',
-    description:
-      'Pushpa & Co. was established with a mission to simplify industrial procurement for key sectors in India.',
-  },
-  {
-    year: '2002',
-    title: 'Expansion into Marine Supply',
-    description:
-      'Began serving the Indian Navy and major shipyards, becoming a trusted supplier for critical marine components.',
-  },
-  {
-    year: '2010',
-    title: 'Steel & Cement Sector Dominance',
-    description:
-      'Established strong partnerships with leading steel and cement plants, providing essential OEM spares and equipment.',
-  },
-  {
-    year: '2018',
-    title: 'Global Network Solidified',
-    description:
-      'Expanded our international sourcing network, enabling faster procurement from Europe, Asia, and North America.',
-  },
-  {
-    year: '2024',
-    title: '30 Years of Excellence',
-    description:
-      'Celebrating three decades of industry leadership, continuous growth, and unwavering commitment to our clients.',
-  },
-];
-
 export default function AboutPage() {
   return (
     <div className="flex flex-col">
@@ -87,53 +54,6 @@ export default function AboutPage() {
                 <p className="text-muted-foreground">{value.description}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Timeline Section */}
-      <section className="bg-card py-16 md:py-24">
-        <div className="container mx-auto">
-          <div className="mx-auto max-w-4xl">
-            <h2 className="mb-12 text-center font-headline text-3xl font-bold sm:text-4xl">
-              Our Journey Through Time
-            </h2>
-            <div className="relative">
-              <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-border"></div>
-              {timeline.map((item, index) => (
-                <div
-                  key={item.year}
-                  className={`relative mb-12 flex w-full items-center ${
-                    index % 2 === 0 ? 'justify-start' : 'justify-end'
-                  }`}
-                >
-                  <div
-                    className={`relative w-1/2 ${
-                      index % 2 === 0 ? 'pr-8' : 'pl-8'
-                    }`}
-                  >
-                    <Card className="shadow-lg">
-                      <CardHeader>
-                        <CardTitle className="flex items-baseline justify-between">
-                          <span className="font-headline text-2xl font-bold text-primary">
-                            {item.year}
-                          </span>
-                        </CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <h4 className="mb-2 text-xl font-semibold">
-                          {item.title}
-                        </h4>
-                        <p className="text-muted-foreground">
-                          {item.description}
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </div>
-                  <div className="absolute left-1/2 top-1/2 z-10 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary ring-8 ring-card"></div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
