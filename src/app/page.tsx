@@ -40,10 +40,10 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-       <section className="relative flex min-h-[60dvh] w-full flex-col items-center justify-center bg-card px-4 py-10 text-center md:min-h-[70dvh] md:px-6 md:py-12">
-        <div className="container mx-auto max-w-4xl space-y-8">
+       <section className="hero-background relative flex min-h-[70dvh] w-full flex-col items-center justify-center px-4 py-16 text-center md:min-h-[80dvh] md:px-6 md:py-24">
+        <div className="container z-10 mx-auto max-w-4xl space-y-8">
           <h1 className="font-headline tracking-tight">
-            <span className="block text-4xl font-semibold sm:text-5xl">Pushpa & Co.</span>
+            <span className="block text-4xl font-semibold text-foreground/90 [text-shadow:0_2px_10px_hsl(var(--background)/0.3)] sm:text-5xl" style={{ textShadow: '0 1px 20px hsla(0, 0%, 0%, 0.1)'}}>Pushpa & Co.</span>
             <span className="mt-4 block text-3xl font-semibold leading-tight text-foreground sm:text-4xl md:leading-tight">
               Trusted OEM Manufacturing & Global Procurement for over 30 Years.
             </span>
