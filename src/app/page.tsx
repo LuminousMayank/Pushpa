@@ -40,15 +40,15 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      <section className="relative flex min-h-[60dvh] w-full flex-col items-center justify-center bg-card px-4 py-20 text-center md:min-h-[70dvh] md:px-6">
-        <div className="container mx-auto max-w-4xl space-y-6">
-          <h1 className="font-headline text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-            <span className="block">Pushpa & Co.</span>
-            <span className="mt-2 block text-2xl font-medium tracking-normal text-muted-foreground sm:text-3xl md:text-4xl">
+       <section className="relative flex min-h-[60dvh] w-full flex-col items-center justify-center bg-card px-4 py-10 text-center md:min-h-[70dvh] md:px-6 md:py-12">
+        <div className="container mx-auto max-w-4xl space-y-8">
+          <h1 className="font-headline tracking-tight">
+            <span className="block text-4xl font-semibold sm:text-5xl">Pushpa & Co.</span>
+            <span className="mt-4 block text-3xl font-semibold leading-tight text-foreground sm:text-4xl md:leading-tight">
               Trusted OEM Manufacturing & Global Procurement for over 30 Years.
             </span>
           </h1>
-          <p className="mx-auto max-w-[700px] text-lg text-muted-foreground md:text-xl">
+          <p className="mx-auto max-w-[600px] text-lg text-muted-foreground opacity-60">
             Reliable sourcing for Defence, Marine, Steel, Cement and Power
             industries.
           </p>
