@@ -29,8 +29,25 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="hero-background relative flex min-h-[80vh] flex-col items-center justify-center py-20 text-center md:py-32"
+        className="relative flex min-h-[80vh] flex-col items-center justify-center overflow-hidden py-20 text-center md:py-32"
       >
+        {/* 
+          TODO: Video Background
+          1. Add your video to the `public/videos/` directory.
+          2. Replace `your-video-name.mp4` with your video file's name below.
+        */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute left-0 top-0 -z-10 h-full w-full object-cover"
+        >
+          <source src="/videos/your-video-name.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="absolute left-0 top-0 -z-10 h-full w-full bg-background/60" />
+
         <div className="container z-10 mx-auto">
           <h1 className="font-headline text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl">
             30 Years of Global Procurement Excellence
@@ -51,7 +68,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section id="values" className="py-16 md:py-24">
+      <section id="values" className="bg-background py-16 md:py-24">
         <div className="container mx-auto">
           <div className="grid gap-12 md:grid-cols-3">
             {values.map((value) => (
