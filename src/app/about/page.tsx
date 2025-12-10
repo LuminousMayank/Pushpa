@@ -31,11 +31,6 @@ export default function AboutPage() {
         id="hero"
         className="relative flex min-h-[80vh] flex-col items-center justify-center overflow-hidden py-20 text-center md:py-32"
       >
-        {/* 
-          TODO: Video Background
-          1. Add your video to the `public/videos/` directory.
-          2. Replace `your-video-name.mp4` with your video file's name below.
-        */}
         <video
           autoPlay
           loop
@@ -43,7 +38,11 @@ export default function AboutPage() {
           playsInline
           className="absolute left-0 top-0 -z-10 h-full w-full object-cover"
         >
-          <source src="/videos/your-video-name.mp4" type="video/mp4" />
+          {/*
+            1. Create a `videos` folder inside the `public` directory.
+            2. Place your video file inside `public/videos/` and name it `about-hero-background.mp4`.
+          */}
+          <source src="/videos/about-hero-background.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="absolute left-0 top-0 -z-10 h-full w-full bg-background/60" />
