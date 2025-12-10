@@ -1,5 +1,6 @@
-import { Building, Globe, Target, Users } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+
+import { Building, Globe, Target, Users, ChevronDown } from 'lucide-react';
+import Link from 'next/link';
 
 const values = [
   {
@@ -26,19 +27,31 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-card py-20 md:py-32">
-        <div className="container mx-auto text-center">
+      <section
+        id="hero"
+        className="hero-background relative flex min-h-[80vh] flex-col items-center justify-center py-20 text-center md:py-32"
+      >
+        <div className="container z-10 mx-auto">
           <h1 className="font-headline text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl">
             30 Years of Global Procurement Excellence
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
-            With three decades of experience, our in-depth supply knowledge and sourcing capabilities have set the industry standard for service and efficiency.
+            With three decades of experience, our in-depth supply knowledge and
+            sourcing capabilities have set the industry standard for service and
+            efficiency.
           </p>
         </div>
+        <Link
+            href="#values"
+            className="absolute bottom-10 z-10 flex animate-bounce flex-col items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            <ChevronDown className="h-6 w-6" />
+            Scroll to learn more
+          </Link>
       </section>
 
       {/* Values Section */}
-      <section className="py-16 md:py-24">
+      <section id="values" className="py-16 md:py-24">
         <div className="container mx-auto">
           <div className="grid gap-12 md:grid-cols-3">
             {values.map((value) => (
