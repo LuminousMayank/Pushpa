@@ -1,4 +1,5 @@
 
+'use client';
 import Image from 'next/image';
 import { productCategories } from '@/lib/data.tsx';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -8,12 +9,12 @@ export default function ProductsPage() {
     <div className="flex flex-col">
       <section className="relative flex min-h-[70vh] flex-col items-center justify-center overflow-hidden py-20 text-center text-white md:py-32">
         <Image
-          src="https://images.unsplash.com/photo-1516962080544-eac695c93791?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxibHVlcHJpbnR8ZW58MHx8fHwxNzY0NTIzMTg0fDA&ixlib=rb-4.1.0&q=80&w=1080"
-          alt="Technical blueprint background"
+          src="https://images.unsplash.com/photo-1632496497047-706290273235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzcGFyZSUyMHBhcnRzfGVufDB8fHx8MTc2NDM1ODE5OXww&ixlib=rb-4.1.0&q=80&w=1080"
+          alt="Warehouse with shelves of spare parts"
           fill
           className="object-cover"
           priority
-          data-ai-hint="blueprint schematic"
+          data-ai-hint="spare parts warehouse"
         />
         <div className="absolute inset-0 bg-black/60 dark:bg-black/70" />
         <div className="container z-10 mx-auto">
