@@ -1,8 +1,5 @@
-
-import { Building, Globe, Target, Users, ChevronDown } from 'lucide-react';
+import { Users, Target, Globe, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const values = [
   {
@@ -26,8 +23,6 @@ const values = [
 ];
 
 export default function AboutPage() {
-  const heroImage = PlaceHolderImages.find((p) => p.id === 'defence-marine');
-
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -35,16 +30,16 @@ export default function AboutPage() {
         id="hero"
         className="relative flex min-h-[80vh] flex-col items-center justify-center overflow-hidden py-20 text-center md:py-32"
       >
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            fill
-            className="object-cover -z-10"
-            priority
-            data-ai-hint={heroImage.imageHint}
-          />
-        )}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute left-0 top-0 -z-10 h-full w-full object-cover"
+        >
+          <source src="/videos/about-hero-background.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="absolute left-0 top-0 -z-10 h-full w-full bg-background/60" />
 
         <div className="container z-10 mx-auto">
@@ -58,12 +53,12 @@ export default function AboutPage() {
           </p>
         </div>
         <Link
-            href="#values"
-            className="absolute bottom-10 z-10 flex animate-bounce flex-col items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <ChevronDown className="h-6 w-6" />
-            Scroll to learn more
-          </Link>
+          href="#values"
+          className="absolute bottom-10 z-10 flex animate-bounce flex-col items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+        >
+          <ChevronDown className="h-6 w-6" />
+          Scroll to learn more
+        </Link>
       </section>
 
       {/* Values Section */}
