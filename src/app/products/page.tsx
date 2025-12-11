@@ -8,7 +8,7 @@ export default function ProductsPage() {
     <div className="flex flex-col">
       <section className="relative flex min-h-[70vh] flex-col items-center justify-center overflow-hidden py-20 text-center text-white md:py-32">
         <Image
-          src="https://images.unsplash.com/photo-1581092921441-08e3323e3523?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxibHVlcHJpbnR8ZW58MHx8fHwxNzY0MzY5MTI3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+          src="https://images.unsplash.com/photo-1516962080544-eac695c93791?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxibHVlcHJpbnR8ZW58MHx8fHwxNzY0NTIzMTg0fDA&ixlib=rb-4.1.0&q=80&w=1080"
           alt="Technical blueprint background"
           fill
           className="object-cover"
