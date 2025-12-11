@@ -1,5 +1,7 @@
+'use client';
 
-import { Users, Target, Globe, ChevronDown } from 'lucide-react';
+import { useRef, useState } from 'react';
+import { Users, Target, Globe, ChevronDown, PlayCircle } from 'lucide-react';
 import Link from 'next/link';
 
 const values = [
@@ -24,15 +26,26 @@ const values = [
 ];
 
 export default function AboutPage() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlayVideo = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    }
+  };
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <section
         id="hero"
-        className="relative flex min-h-[80vh] flex-col items-center justify-center overflow-hidden py-20 text-center md:py-32"
+        className="relative flex min-h-[80vh] cursor-pointer flex-col items-center justify-center overflow-hidden py-20 text-center md:py-32"
+        onClick={handlePlayVideo}
       >
         <video
-          autoPlay
+          ref={videoRef}
           loop
           muted
           playsInline
@@ -42,6 +55,13 @@ export default function AboutPage() {
           Your browser does not support the video tag.
         </video>
         <div className="absolute left-0 top-0 -z-10 h-full w-full bg-background/60" />
+
+        {!isPlaying && (
+          <div className="absolute z-20 flex flex-col items-center text-center text-primary">
+            <PlayCircle className="h-24 w-24" />
+            <p className="mt-2 font-semibold">Click to Play Video</p>
+          </div>
+        )}
 
         <div className="container z-10 mx-auto">
           <h1 className="font-headline text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl">
