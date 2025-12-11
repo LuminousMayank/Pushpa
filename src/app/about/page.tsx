@@ -74,13 +74,13 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="relative flex min-h-[70vh] flex-col items-center justify-center overflow-hidden bg-card py-20 text-center md:py-32"
+        className="relative flex min-h-[70vh] flex-col items-center justify-center overflow-hidden bg-destructive py-20 text-center md:py-32"
       >
         <div className="container z-10 mx-auto">
-          <h1 className="font-headline text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl">
+          <h1 className="font-headline text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl text-destructive-foreground">
             30 Years of Global Procurement Excellence
           </h1>
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
+          <p className="mx-auto mt-6 max-w-3xl text-lg text-destructive-foreground/80 md:text-xl">
             With three decades of experience, our in-depth supply knowledge and
             sourcing capabilities have set the industry standard for service and
             efficiency.
@@ -88,7 +88,7 @@ export default function AboutPage() {
         </div>
         <Link
           href="#values"
-          className="absolute bottom-10 z-10 flex animate-bounce flex-col items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+          className="absolute bottom-10 z-10 flex animate-bounce flex-col items-center gap-2 text-sm text-destructive-foreground/80 transition-colors hover:text-destructive-foreground"
         >
           <ChevronDown className="h-6 w-6" />
           Scroll to learn more
