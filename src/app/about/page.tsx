@@ -76,10 +76,7 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section
-        id="hero"
-        className="relative flex min-h-[70vh] flex-col items-center justify-center overflow-hidden py-20 text-center text-white md:py-32"
-      >
+      <section className="relative flex min-h-[70vh] flex-col items-center justify-center overflow-hidden py-20 text-center text-white md:py-32">
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
@@ -90,12 +87,12 @@ export default function AboutPage() {
             data-ai-hint={heroImage.imageHint}
           />
         )}
-        <div className="absolute inset-0 bg-background/60" />
+        <div className="absolute inset-0 bg-black/60 dark:bg-black/70" />
         <div className="container z-10 mx-auto">
-          <h1 className="font-headline text-4xl font-extrabold tracking-tighter text-foreground sm:text-5xl md:text-6xl">
+          <h1 className="font-headline text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl">
             30 Years of Global Procurement Excellence
           </h1>
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-foreground/80 md:text-xl">
+          <p className="mx-auto mt-6 max-w-3xl text-lg text-white/80 md:text-xl">
             With three decades of experience, our in-depth supply knowledge and
             sourcing capabilities have set the industry standard for service and
             efficiency.
@@ -103,7 +100,7 @@ export default function AboutPage() {
         </div>
         <Link
           href="#values"
-          className="absolute bottom-10 z-10 flex animate-bounce flex-col items-center gap-2 text-sm text-foreground/80 transition-colors hover:text-foreground"
+          className="absolute bottom-10 z-10 flex animate-bounce flex-col items-center gap-2 text-sm text-white/80 transition-colors hover:text-white"
         >
           <ChevronDown className="h-6 w-6" />
           Scroll to learn more
