@@ -1,4 +1,3 @@
-'use client';
 
 import { ChevronDown } from 'lucide-react';
 import Link from 'next/link';
@@ -75,20 +74,8 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="relative flex min-h-[80vh] flex-col items-center justify-center overflow-hidden py-20 text-center md:py-32"
+        className="relative flex min-h-[70vh] flex-col items-center justify-center overflow-hidden bg-card py-20 text-center md:py-32"
       >
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute left-0 top-0 -z-10 h-full w-full object-cover"
-          src="/about.mp4"
-        >
-          Your browser does not support the video tag.
-        </video>
-        <div className="absolute left-0 top-0 -z-10 h-full w-full bg-background/60" />
-
         <div className="container z-10 mx-auto">
           <h1 className="font-headline text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl">
             30 Years of Global Procurement Excellence
