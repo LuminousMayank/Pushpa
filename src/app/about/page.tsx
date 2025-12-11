@@ -1,24 +1,68 @@
 'use client';
 
-import { useRef, useState } from 'react';
-import { Users, Target, Globe, ChevronDown, PlayCircle } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 
 const values = [
   {
-    icon: <Target className="h-10 w-10 text-primary" />,
+    icon: (
+      <svg
+        className="h-10 w-10 text-primary"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
+      </svg>
+    ),
     title: 'Unwavering Reliability',
     description:
       'As a trustworthy and efficient partner, we build trust through consistent, on-time delivery and transparent communication, ensuring your operations never falter.',
   },
   {
-    icon: <Globe className="h-10 w-10 text-primary" />,
+    icon: (
+      <svg
+        className="h-10 w-10 text-primary"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3"
+        />
+      </svg>
+    ),
     title: 'Global Sourcing Expertise',
     description:
       'Based in India with a vast network of suppliers, we offer the benefits of a worldwide sourcing operation, finding the right products at competitive prices.',
   },
   {
-    icon: <Users className="h-10 w-10 text-primary" />,
+    icon: (
+      <svg
+        className="h-10 w-10 text-primary"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+        />
+      </svg>
+    ),
     title: 'Customer-Centric Procurement',
     description:
       'We aim to provide the best, most efficient, and economic procurement experience, leveraging our deep product knowledge to meet your unique needs.',
@@ -26,42 +70,24 @@ const values = [
 ];
 
 export default function AboutPage() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const handlePlayVideo = () => {
-    if (videoRef.current) {
-      videoRef.current.play();
-      setIsPlaying(true);
-    }
-  };
-
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <section
         id="hero"
-        className="relative flex min-h-[80vh] cursor-pointer flex-col items-center justify-center overflow-hidden py-20 text-center md:py-32"
-        onClick={handlePlayVideo}
+        className="relative flex min-h-[80vh] flex-col items-center justify-center overflow-hidden py-20 text-center md:py-32"
       >
         <video
-          ref={videoRef}
+          autoPlay
           loop
           muted
           playsInline
           className="absolute left-0 top-0 -z-10 h-full w-full object-cover"
+          src="/about.mp4"
         >
-          <source src="/about.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="absolute left-0 top-0 -z-10 h-full w-full bg-background/60" />
-
-        {!isPlaying && (
-          <div className="absolute z-20 flex flex-col items-center text-center text-primary">
-            <PlayCircle className="h-24 w-24" />
-            <p className="mt-2 font-semibold">Click to Play Video</p>
-          </div>
-        )}
 
         <div className="container z-10 mx-auto">
           <h1 className="font-headline text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl">
