@@ -1,3 +1,4 @@
+
 import { Users, Target, Globe, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 
@@ -37,7 +38,7 @@ export default function AboutPage() {
           playsInline
           className="absolute left-0 top-0 -z-10 h-full w-full object-cover"
         >
-          <source src="/videos/about-hero-background.mp4" type="video/mp4" />
+          <source src="/about.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="absolute left-0 top-0 -z-10 h-full w-full bg-background/60" />
