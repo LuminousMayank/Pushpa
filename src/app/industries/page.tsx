@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { CheckCircle } from 'lucide-react';
 import { industries } from '@/lib/data.tsx';
@@ -6,12 +7,21 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 export default function IndustriesPage() {
   return (
     <div className="flex flex-col">
-      <section className="bg-card py-20 md:py-32">
-        <div className="container mx-auto text-center">
+      <section className="relative flex min-h-[70vh] flex-col items-center justify-center overflow-hidden py-20 text-center text-white md:py-32">
+        <Image
+          src="https://images.unsplash.com/photo-1533134486753-c833f0ed4866?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhYnN0cmFjdCUyMGRhcmslMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc2NDM2OTEyN3ww&ixlib=rb-4.1.0&q=80&w=1080"
+          alt="Abstract background image"
+          fill
+          className="object-cover"
+          priority
+          data-ai-hint="abstract background"
+        />
+        <div className="absolute inset-0 bg-black/60 dark:bg-black/70" />
+        <div className="container z-10 mx-auto">
           <h1 className="font-headline text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl">
             Specialized Solutions for Core Industries
           </h1>
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
+          <p className="mx-auto mt-6 max-w-3xl text-lg text-white/80 md:text-xl">
             We provide tailored procurement services and OEM parts for the
             backbone of the global economy, ensuring efficiency, reliability,
             and performance.
