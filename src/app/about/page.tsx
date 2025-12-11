@@ -1,6 +1,8 @@
 
 import { Building, Globe, Target, Users, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const values = [
   {
@@ -24,6 +26,8 @@ const values = [
 ];
 
 export default function AboutPage() {
+  const heroImage = PlaceHolderImages.find((p) => p.id === 'defence-marine');
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -31,20 +35,16 @@ export default function AboutPage() {
         id="hero"
         className="relative flex min-h-[80vh] flex-col items-center justify-center overflow-hidden py-20 text-center md:py-32"
       >
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute left-0 top-0 -z-10 h-full w-full object-cover"
-        >
-          {/*
-            1. Create a `videos` folder inside the `public` directory.
-            2. Place your video file inside `public/videos/` and name it `about-hero-background.mp4`.
-          */}
-          <source src="/videos/about-hero-background.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        {heroImage && (
+          <Image
+            src={heroImage.imageUrl}
+            alt={heroImage.description}
+            fill
+            className="object-cover -z-10"
+            priority
+            data-ai-hint={heroImage.imageHint}
+          />
+        )}
         <div className="absolute left-0 top-0 -z-10 h-full w-full bg-background/60" />
 
         <div className="container z-10 mx-auto">
