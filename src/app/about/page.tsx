@@ -71,7 +71,7 @@ const values = [
 ];
 
 export default function AboutPage() {
-  const heroImage = PlaceHolderImages.find((p) => p.id === 'defence-marine');
+  const heroImage = PlaceHolderImages.find((p) => p.id === 'steel-plants');
 
   return (
     <div className="flex flex-col">
