@@ -1,5 +1,5 @@
 
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -143,6 +143,60 @@ export default function AboutPage() {
         </div>
         <div className="mt-12">
           <ClientMarquee clients={allClients} />
+        </div>
+      </section>
+      
+      {/* Location Section */}
+      <section id="location" className="bg-background py-16 md:py-24">
+        <div className="container mx-auto">
+          <div className="text-center">
+             <h2 className="font-headline text-3xl font-extrabold tracking-tighter sm:text-4xl md:text-5xl">
+              Visit Us
+            </h2>
+            <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
+              We are located in the heart of the industrial hub. Come visit us to discuss your needs.
+            </p>
+          </div>
+          <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-2">
+            <div className="space-y-6 rounded-lg bg-card p-8">
+              <h3 className="font-headline text-2xl font-bold">Our Office</h3>
+              <div className="space-y-4 text-muted-foreground">
+                <div className="flex items-start gap-4">
+                  <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                  <p>
+                    Pushpa & Co.
+                    <br />
+                    123 Industrial Estate,
+                    <br />
+                    Navi Mumbai, Maharashtra 400705,
+                    <br />
+                    India
+                  </p>
+                </div>
+                <div className="flex items-center gap-4">
+                   <Phone className="h-5 w-5 flex-shrink-0 text-primary" />
+                   <span>+91 22 1234 5678</span>
+                </div>
+                <div className="flex items-center gap-4">
+                    <Mail className="h-5 w-5 flex-shrink-0 text-primary" />
+                    <span>contact@pushpaandco.com</span>
+                </div>
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-lg shadow-xl">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609802873!2d72.8811861783353!3d19.08250200543784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Google map of Pushpa & Co. location"
+                className='min-h-[400px]'
+              ></iframe>
+            </div>
+          </div>
         </div>
       </section>
     </div>
