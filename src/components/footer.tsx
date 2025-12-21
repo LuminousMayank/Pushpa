@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Ship } from 'lucide-react';
 
@@ -5,7 +6,6 @@ const navLinks = [
   { href: '/about', label: 'About' },
   { href: '/industries', label: 'Industries' },
   { href: '/products', label: 'Products' },
-  { href: '/clients', label: 'Clients' },
   { href: '/contact', label: 'Contact' },
 ];
 

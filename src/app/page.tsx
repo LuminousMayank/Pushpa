@@ -31,7 +31,7 @@ const previewSections = [
   {
     title: 'Our Valued Clients',
     description: 'See the leading companies that trust Pushpa & Co.',
-    link: '/clients',
+    link: '/about#clients',
     image: PlaceHolderImages.find(p => p.id === 'clients-preview'),
   },
 ];
