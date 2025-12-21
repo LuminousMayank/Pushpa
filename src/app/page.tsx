@@ -58,10 +58,6 @@ export default function Home() {
               Trusted OEM Manufacturing & Global Procurement for over 30 Years.
             </span>
           </h1>
-          <p className="mx-auto max-w-[600px] text-lg text-white/80">
-            Reliable sourcing for Defence, Marine, Steel, Cement and Power
-            industries.
-          </p>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Button asChild size="lg">
               <Link href="/products">
