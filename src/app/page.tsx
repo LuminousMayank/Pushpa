@@ -52,10 +52,10 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/60 dark:bg-black/70" />
         <div className="container z-10 mx-auto max-w-4xl space-y-8">
-          <h1 className="font-headline tracking-tight">
-            <span className="block text-4xl font-semibold text-white/90 [text-shadow:0_2px_10px_hsl(var(--background)/0.3)] sm:text-5xl" style={{ textShadow: '0 1px 20px hsla(0, 0%, 0%, 0.1)'}}>Pushpa & Co.</span>
-            <span className="mt-4 block text-3xl font-semibold leading-tight text-white sm:text-4xl md:leading-tight">
-              Trusted OEM Manufacturing & Global Procurement for over 30 Years.
+          <h1 className="font-headline tracking-tighter">
+            <span className="block text-4xl font-semibold text-white [text-shadow:0_2px_10px_hsl(var(--background)/0.3)] sm:text-5xl" style={{ textShadow: '0 1px 20px hsla(0, 0%, 0%, 0.2)'}}>Pushpa & Co.</span>
+            <span className="mt-2 block text-3xl font-semibold leading-tight text-white/90 sm:text-4xl md:leading-tight">
+             Trusted OEM Manufacturing & Global Procurement for over 30 Years.
             </span>
           </h1>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
