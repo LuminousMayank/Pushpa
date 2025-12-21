@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
@@ -37,34 +38,18 @@ const previewSections = [
 
 export default function Home() {
   const allClients = clientCategories.flatMap(category => category.clients);
-  const collageImages = [
-    PlaceHolderImages.find(p => p.id === 'defence-marine'),
-    PlaceHolderImages.find(p => p.id === 'steel-plants'),
-    PlaceHolderImages.find(p => p.id === 'cement-power'),
-    PlaceHolderImages.find(p => p.id === 'about-preview'),
-  ];
-
+  
   return (
     <div className="flex flex-col">
        <section className="relative flex min-h-[70dvh] w-full flex-col items-center justify-center overflow-hidden px-4 py-16 text-center text-white md:min-h-[80dvh] md:px-6 md:py-24">
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="animate-collage-scroll">
-            {[...collageImages, ...collageImages].map((image, index) =>
-              image ? (
-                <div key={index} className="relative h-1/4 w-full">
-                  <Image
-                    src={image.imageUrl}
-                    alt={image.description}
-                    fill
-                    className="object-cover"
-                    priority={index < 4}
-                    data-ai-hint={image.imageHint}
-                  />
-                </div>
-              ) : null
-            )}
-          </div>
-        </div>
+        <Image
+            src="https://images.unsplash.com/photo-1560959424-30019e869c32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwY29sbGFnZXxlbnwwfHx8fDE3NjQzNzY3OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+            alt="Industrial collage background"
+            fill
+            className="object-cover"
+            priority
+            data-ai-hint="industrial collage"
+        />
         <div className="absolute inset-0 bg-black/60 dark:bg-black/70" />
         <div className="container z-10 mx-auto max-w-4xl space-y-8">
           <h1 className="font-headline tracking-tight">

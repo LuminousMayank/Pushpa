@@ -127,16 +127,4 @@
   .animate-scroll {
     animation: scroll 60s linear infinite;
   }
-
-  @keyframes collage-scroll {
-    from { transform: translateY(0); }
-    to { transform: translateY(-50%); }
-  }
-  .animate-collage-scroll {
-    animation: collage-scroll 40s linear infinite;
-    display: flex;
-    flex-direction: column;
-    height: 200%;
-    width: 100%;
-  }
 }
