@@ -59,12 +59,12 @@ export default function Home() {
             </span>
           </h1>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-            <Button asChild size="lg">
+            <Button asChild size="lg" variant="secondary">
               <Link href="/products">
                 Explore Products <ArrowRight className="ml-2" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="secondary">
+            <Button asChild size="lg">
               <Link href="/contact">Request a Quote</Link>
             </Button>
           </div>
