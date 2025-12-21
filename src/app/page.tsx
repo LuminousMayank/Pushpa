@@ -46,7 +46,7 @@ export default function Home() {
             src="/industrial-collage.png"
             alt="Industrial collage background"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
             data-ai-hint="industrial collage"
         />
