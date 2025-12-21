@@ -37,18 +37,43 @@ const previewSections = [
 
 export default function Home() {
   const allClients = clientCategories.flatMap(category => category.clients);
+  const collageImages = [
+    PlaceHolderImages.find(p => p.id === 'defence-marine'),
+    PlaceHolderImages.find(p => p.id === 'steel-plants'),
+    PlaceHolderImages.find(p => p.id === 'cement-power'),
+    PlaceHolderImages.find(p => p.id === 'about-preview'),
+  ];
 
   return (
     <div className="flex flex-col">
-       <section className="hero-background relative flex min-h-[70dvh] w-full flex-col items-center justify-center px-4 py-16 text-center md:min-h-[80dvh] md:px-6 md:py-24">
+       <section className="relative flex min-h-[70dvh] w-full flex-col items-center justify-center overflow-hidden px-4 py-16 text-center text-white md:min-h-[80dvh] md:px-6 md:py-24">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="animate-collage-scroll">
+            {[...collageImages, ...collageImages].map((image, index) =>
+              image ? (
+                <div key={index} className="relative h-1/4 w-full">
+                  <Image
+                    src={image.imageUrl}
+                    alt={image.description}
+                    fill
+                    className="object-cover"
+                    priority={index < 4}
+                    data-ai-hint={image.imageHint}
+                  />
+                </div>
+              ) : null
+            )}
+          </div>
+        </div>
+        <div className="absolute inset-0 bg-black/60 dark:bg-black/70" />
         <div className="container z-10 mx-auto max-w-4xl space-y-8">
           <h1 className="font-headline tracking-tight">
-            <span className="block text-4xl font-semibold text-foreground/90 [text-shadow:0_2px_10px_hsl(var(--background)/0.3)] sm:text-5xl" style={{ textShadow: '0 1px 20px hsla(0, 0%, 0%, 0.1)'}}>Pushpa & Co.</span>
-            <span className="mt-4 block text-3xl font-semibold leading-tight text-foreground sm:text-4xl md:leading-tight">
+            <span className="block text-4xl font-semibold text-white/90 [text-shadow:0_2px_10px_hsl(var(--background)/0.3)] sm:text-5xl" style={{ textShadow: '0 1px 20px hsla(0, 0%, 0%, 0.1)'}}>Pushpa & Co.</span>
+            <span className="mt-4 block text-3xl font-semibold leading-tight text-white sm:text-4xl md:leading-tight">
               Trusted OEM Manufacturing & Global Procurement for over 30 Years.
             </span>
           </h1>
-          <p className="mx-auto max-w-[600px] text-lg text-muted-foreground opacity-60">
+          <p className="mx-auto max-w-[600px] text-lg text-white/80">
             Reliable sourcing for Defence, Marine, Steel, Cement and Power
             industries.
           </p>
