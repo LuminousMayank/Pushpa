@@ -1,5 +1,5 @@
 
-import { ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -146,61 +146,6 @@ export default function AboutPage() {
         </div>
       </section>
       
-      {/* Location Section */}
-      <section id="location" className="bg-background py-16 md:py-24">
-        <div className="container mx-auto">
-          <div className="text-center">
-             <h2 className="font-headline text-3xl font-extrabold tracking-tighter sm:text-4xl md:text-5xl">
-              Visit Us
-            </h2>
-            <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
-              Our office is located in the port city of Visakhapatnam. Come visit us to discuss your needs.
-            </p>
-          </div>
-          <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-2">
-            <div className="space-y-6 rounded-lg bg-card p-8">
-              <h3 className="font-headline text-2xl font-bold">Our Office</h3>
-              <div className="space-y-4 text-muted-foreground">
-                <div className="flex items-start gap-4">
-                  <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                  <p>
-                    PUSHPA and CO
-                    <br />
-                    1/114/12 Flat No 302, Sri Aurobindo Heights,
-                    <br />
-                    M V P Colony, Chinawaltair,
-                    <br />
-                    Visakhapatnam, Andhra Pradesh 530017,
-                    <br />
-                    India
-                  </p>
-                </div>
-                <div className="flex items-center gap-4">
-                   <Phone className="h-5 w-5 flex-shrink-0 text-primary" />
-                   <span>+91 22 1234 5678</span>
-                </div>
-                <div className="flex items-center gap-4">
-                    <Mail className="h-5 w-5 flex-shrink-0 text-primary" />
-                    <span>info@pushpa.com</span>
-                </div>
-              </div>
-            </div>
-            <div className="overflow-hidden rounded-lg shadow-xl">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.563914831961!2d83.33230907588145!3d17.73907408323055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39436e4b868881%3A0x13c69027c36a44ca!2sSri%20Aurobindo%20St%2C%20Sector%201%2C%20MVP%20Colony%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530017%2C%20India!5e0!3m2!1sen!2sus!4v1717696347313!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen={false}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Google map of Pushpa & Co. location"
-                className='min-h-[400px]'
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
