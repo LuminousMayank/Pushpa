@@ -181,7 +181,7 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-center gap-4">
                     <Mail className="h-5 w-5 flex-shrink-0 text-primary" />
-                    <span>contact@pushpaandco.com</span>
+                    <span>info@pushpa.com</span>
                 </div>
               </div>
             </div>
