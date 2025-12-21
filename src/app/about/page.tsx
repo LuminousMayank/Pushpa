@@ -164,11 +164,13 @@ export default function AboutPage() {
                 <div className="flex items-start gap-4">
                   <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
                   <p>
-                    Pushpa & Co.
+                    PUSHPA and CO
                     <br />
-                    123 Industrial Estate,
+                    1/114/12 Flat No 302, Sri Aurobindo Heights,
                     <br />
-                    Navi Mumbai, Maharashtra 400705,
+                    M V P Colony, Chinawaltair,
+                    <br />
+                    Visakhapatnam, Andhra Pradesh 530017,
                     <br />
                     India
                   </p>
@@ -185,7 +187,7 @@ export default function AboutPage() {
             </div>
             <div className="overflow-hidden rounded-lg shadow-xl">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609802873!2d72.8811861783353!3d19.08250200543784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.563914831961!2d83.33230907588145!3d17.73907408323055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39436e4b868881%3A0x13c69027c36a44ca!2sSri%20Aurobindo%20St%2C%20Sector%201%2C%20MVP%20Colony%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530017%2C%20India!5e0!3m2!1sen!2sus!4v1717696347313!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
