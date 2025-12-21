@@ -47,7 +47,7 @@ const values = [
     ),
     title: 'Global Sourcing Expertise',
     description:
-      'Strategically based in the port city of Visakhapatnam, we leverage our vast supplier network to offer a worldwide sourcing operation, finding the right products at competitive prices.',
+      'From our base in the port city of Visakhapatnam, we offer worldwide sourcing with competitive pricing.',
   },
   {
     icon: (
@@ -154,7 +154,7 @@ export default function AboutPage() {
               Visit Us
             </h2>
             <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
-              Our offices are strategically located in Visakhapatnam, a major port and industrial center on India's east coast. Come visit us to discuss your needs.
+              Our office is located in the port city of Visakhapatnam. Come visit us to discuss your needs.
             </p>
           </div>
           <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-2">
