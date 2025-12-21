@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { clientCategories } from '@/lib/data.tsx';
-import { Card } from '@/components/ui/card';
+import { ClientMarquee } from '@/components/client-marquee';
 
 const values = [
   {
@@ -74,6 +74,7 @@ const values = [
 
 export default function AboutPage() {
   const heroImage = PlaceHolderImages.find((p) => p.id === 'steel-plants');
+  const allClients = clientCategories.flatMap((category) => category.clients);
 
   return (
     <div className="flex flex-col">
@@ -127,7 +128,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      
+
       {/* Clients Section */}
       <section id="clients" className="bg-card py-16 md:py-24">
         <div className="container mx-auto text-center">
@@ -140,26 +141,8 @@ export default function AboutPage() {
             earned us their long-term trust.
           </p>
         </div>
-        <div className="container mx-auto mt-12 space-y-16">
-          {clientCategories.map((category) => (
-            <div key={category.name}>
-              <h3 className="mb-8 text-center font-headline text-3xl font-bold md:text-4xl">
-                {category.name}
-              </h3>
-              <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
-                {category.clients.map((client) => (
-                  <Card
-                    key={client.name}
-                    className="flex h-24 items-center justify-center p-6 transition-all duration-300 hover:bg-muted"
-                  >
-                    <p className="text-center font-semibold text-muted-foreground">
-                      {client.name}
-                    </p>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          ))}
+        <div className="mt-12">
+          <ClientMarquee clients={allClients} />
         </div>
       </section>
     </div>
