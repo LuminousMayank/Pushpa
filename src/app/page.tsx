@@ -43,7 +43,7 @@ export default function Home() {
     <div className="flex flex-col">
        <section className="relative flex min-h-[70dvh] w-full flex-col items-center justify-center overflow-hidden px-4 py-16 text-center text-white md:min-h-[80dvh] md:px-6 md:py-24">
         <Image
-            src="https://images.unsplash.com/photo-1560959424-30019e869c32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwY29sbGFnZXxlbnwwfHx8fDE3NjQzNzY3OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+            src="/industrial-collage.png"
             alt="Industrial collage background"
             fill
             className="object-cover"
