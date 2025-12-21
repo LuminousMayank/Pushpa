@@ -17,15 +17,7 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
-import { industries } from '@/lib/data.tsx';
 import { Card, CardContent } from './ui/card';
 
 const rfqFormSchema = z.object({
@@ -33,7 +25,7 @@ const rfqFormSchema = z.object({
   company: z.string().min(2, { message: 'Company name is required.' }),
   email: z.string().email({ message: 'Please enter a valid email address.' }),
   phone: z.string().min(10, { message: 'Please enter a valid phone number.' }),
-  sector: z.string({ required_error: 'Please select an industry sector.' }),
+  sector: z.string().min(2, { message: 'Industry sector is required.' }),
   message: z.string().min(10, { message: 'Message must be at least 10 characters.' }),
   file: z.any().optional(),
 });
@@ -52,6 +44,7 @@ export function RfqForm() {
       company: '',
       email: '',
       phone: '',
+      sector: '',
       message: '',
     },
   });
@@ -147,20 +140,9 @@ export function RfqForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Industry Sector</FormLabel>
-                  <Select onValueChange={field.onChange} defaultValue={field.value}>
-                    <FormControl>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select a sector" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                      {industries.map((industry) => (
-                        <SelectItem key={industry.name} value={industry.name}>
-                          {industry.name}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
+                  <FormControl>
+                    <Input placeholder="e.g., Marine, Steel, Power" {...field} />
+                  </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
