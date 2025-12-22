@@ -27,7 +27,7 @@ const values = [
     ),
     title: 'Unwavering Reliability',
     description:
-      'As a trustworthy and efficient partner, we build trust through consistent, on-time delivery and transparent communication, ensuring your operations never falter.',
+      'We build trust through on-time delivery and transparent communication, ensuring your operations run without interruption.',
   },
   {
     icon: (
@@ -69,7 +69,7 @@ const values = [
     ),
     title: 'Customer-Centric Procurement',
     description:
-      'We aim to provide the best, most efficient, and economic procurement experience, leveraging our deep product knowledge to meet your unique needs.',
+      'We provide an efficient and economic procurement experience, leveraging deep product knowledge to meet your unique needs.',
   },
 ];
 
@@ -94,12 +94,10 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-black/60 dark:bg-black/70" />
         <div className="container z-10 mx-auto">
           <h1 className="font-headline text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl">
-            30 Years of Global Procurement Excellence
+            Three Decades of Procurement Excellence
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-white/80 md:text-xl">
-            With three decades of experience, our in-depth supply knowledge and
-            sourcing capabilities have set the industry standard for service and
-            efficiency.
+            Our deep supply knowledge and global sourcing capabilities have set the industry standard for service and efficiency.
           </p>
         </div>
         <Link
@@ -130,11 +128,35 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Company Profile Section */}
+      <section className="bg-card py-16 md:py-24">
+        <div className="container mx-auto grid max-w-5xl items-center gap-12 md:grid-cols-2">
+          <div className="space-y-6">
+            <h2 className="font-headline text-3xl font-bold tracking-tight">Our Global Commitment</h2>
+            <p className="text-lg text-muted-foreground">
+              As premier Merchant Exporters and General Traders, we are deeply embedded in the Marine, Defence, Power, and Manufacturing sectors. We specialize in exporting quality-driven products from leading American, European, and Asian brands, delivering excellence and precision.
+            </p>
+            <p className="text-muted-foreground">
+              Adhering to all export regulations with complete transaction transparency, we foster a professional environment and build lasting client relationships. Our well-researched inventory and strategic supplier network give us a cutting edge on the global stage.
+            </p>
+          </div>
+           <div className="relative h-80 w-full md:h-96">
+            <Image
+              src="https://images.unsplash.com/photo-1579226905180-636b76d96a82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxnbG9iYWwlMjBsb2dpc3RpY3N8ZW58MHx8fHwxNzY0NTI0NDY1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="Global logistics and shipping"
+              fill
+              className="rounded-lg object-cover shadow-xl"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              data-ai-hint="global logistics"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Location Section */}
-      <section className="bg-background pb-16 md:pb-24">
+      <section className="bg-background pb-16 pt-16 md:pb-24 md:pt-24">
         <div className="container mx-auto">
           <div className="mx-auto max-w-4xl text-center">
-            <Separator className="my-8" />
             <h2 className="font-headline text-3xl font-bold tracking-tight">Our Headquarters</h2>
             <p className="mt-4 text-lg text-muted-foreground">
               We are strategically headquartered in the port city of Visakhapatnam, a major industrial and logistics hub on India's east coast. This prime location enhances our sourcing and distribution capabilities.
