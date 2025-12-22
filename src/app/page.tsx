@@ -1,7 +1,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ChevronDown } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -59,19 +59,26 @@ export default function Home() {
             </span>
           </h1>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <Button asChild size="lg">
+              <Link href="/contact">Request a Quote</Link>
+            </Button>
             <Button asChild size="lg" variant="secondary">
               <Link href="/products">
                 Explore Products <ArrowRight className="ml-2" />
               </Link>
             </Button>
-            <Button asChild size="lg">
-              <Link href="/contact">Request a Quote</Link>
-            </Button>
           </div>
         </div>
+        <Link
+          href="#clients"
+          className="absolute bottom-10 z-10 flex animate-bounce flex-col items-center gap-2 text-sm text-white/80 transition-colors hover:text-white"
+        >
+          <ChevronDown className="h-6 w-6" />
+          Scroll to discover
+        </Link>
       </section>
 
-      <section className="bg-background py-12 md:py-16">
+      <section id="clients" className="bg-background py-12 md:py-16">
         <div className="container mx-auto">
           <h2 className="mb-8 text-center text-2xl font-semibold tracking-tight text-muted-foreground">
             Trusted by industry leaders across India
