@@ -134,7 +134,7 @@ export default function AboutPage() {
           <div className="space-y-6">
             <h2 className="font-headline text-3xl font-bold tracking-tight">Our Global Commitment</h2>
             <p className="text-lg text-muted-foreground">
-              As premier Merchant Exporters and General Traders, we are deeply embedded in the Marine, Defence, Power, and Manufacturing sectors. We specialize in exporting quality-driven products from leading American, European, and Asian brands, delivering excellence and precision.
+              As premier Merchant Exporters and General Traders, we are deeply embedded in the Marine, Defence, Power, and Manufacturing sectors. We specialize in supplying quality-driven products, delivering excellence and precision to our partners.
             </p>
             <p className="text-muted-foreground">
               Adhering to all export regulations with complete transaction transparency, we foster a professional environment and build lasting client relationships. Our well-researched inventory and strategic supplier network give us a cutting edge on the global stage.
