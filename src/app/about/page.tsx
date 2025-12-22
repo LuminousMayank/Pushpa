@@ -142,7 +142,7 @@ export default function AboutPage() {
           </div>
            <div className="relative h-80 w-full md:h-96">
             <Image
-              src="https://images.unsplash.com/photo-1579226905180-636b76d96a82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxnbG9iYWwlMjBsb2dpc3RpY3N8ZW58MHx8fHwxNzY0NTI0NDY1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+              src="https://picsum.photos/seed/logistics/1080/800"
               alt="Global logistics and shipping"
               fill
               className="rounded-lg object-cover shadow-xl"
