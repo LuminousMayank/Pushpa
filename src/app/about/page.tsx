@@ -139,13 +139,6 @@ export default function AboutPage() {
             <p className="mt-4 text-lg text-muted-foreground">
               We are strategically headquartered in the port city of Visakhapatnam, a major industrial and logistics hub on India's east coast. This prime location enhances our sourcing and distribution capabilities.
             </p>
-            <address className="mt-6 not-italic text-muted-foreground/80">
-              1/114/12 Flat No 302, Sri Aurobindo Heights,
-              <br />
-              M V P Colony, Chinawaltair,
-              <br />
-              Visakhapatnam, Andhra Pradesh 530017
-            </address>
           </div>
         </div>
       </section>
