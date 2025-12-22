@@ -67,7 +67,7 @@ const values = [
         />
       </svg>
     ),
-    title: 'Customer-Centric Procurement',
+    title: 'Tailored Procurement',
     description:
       'We provide an efficient and economic procurement experience, leveraging deep product knowledge to meet your unique needs.',
   },
@@ -121,7 +121,7 @@ export default function AboutPage() {
                 <h3 className="mb-2 font-headline text-2xl font-bold">
                   {value.title}
                 </h3>
-                <p className="flex-grow text-muted-foreground">{value.description}</p>
+                <p className="text-muted-foreground">{value.description}</p>
               </div>
             ))}
           </div>
