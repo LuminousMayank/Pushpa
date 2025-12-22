@@ -41,7 +41,7 @@ export default function Home() {
   
   return (
     <div className="flex flex-col">
-       <section className="relative flex min-h-[70dvh] w-full flex-col items-center justify-center overflow-hidden px-4 py-16 text-center text-white md:min-h-[80dvh] md:px-6 md:py-24">
+       <section className="relative flex h-dvh w-full flex-col items-center justify-center overflow-hidden px-4 py-16 text-center text-white md:px-6 md:py-24">
         <Image
             src="/industrial-collage.png"
             alt="Industrial collage background"
