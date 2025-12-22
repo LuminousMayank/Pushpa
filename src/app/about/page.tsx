@@ -112,16 +112,16 @@ export default function AboutPage() {
       {/* Values Section */}
       <section id="values" className="bg-background py-16 md:py-24">
         <div className="container mx-auto">
-          <div className="grid gap-12 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-3">
             {values.map((value) => (
-              <div key={value.title} className="text-center">
+              <div key={value.title} className="flex flex-col text-center">
                 <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-card">
                   {value.icon}
                 </div>
                 <h3 className="mb-2 font-headline text-2xl font-bold">
                   {value.title}
                 </h3>
-                <p className="text-muted-foreground">{value.description}</p>
+                <p className="flex-grow text-muted-foreground">{value.description}</p>
               </div>
             ))}
           </div>
