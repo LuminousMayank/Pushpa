@@ -42,7 +42,7 @@ export const productCategories: Product[] = [
     },
     {
       name: "RAS Spares",
-      iconUrl: "/icons/ras-spares.png",
+      iconUrl: "/icons/rasspares.png",
       description: "Specialized spares for Replenishment-At-Sea (RAS) systems, crucial for naval and maritime support operations.",
     },
     {
