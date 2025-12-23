@@ -1,4 +1,3 @@
-import { Cog, Anchor, Replace, Fan, SlidersHorizontal, Wrench, CircuitBoard, GitCommitHorizontal, LifeBuoy } from "lucide-react";
 import type { ClientCategory, Product, Industry } from "./types";
 
 export const clientCategories: ClientCategory[] = [
@@ -33,47 +32,47 @@ export const clientCategories: ClientCategory[] = [
 export const productCategories: Product[] = [
     {
       name: "OEM Spare Parts",
-      icon: Cog,
+      iconUrl: "/icons/oem-spare-parts.png",
       description: "Authentic, high-quality spare parts directly from original equipment manufacturers to ensure perfect fit and performance.",
     },
     {
       name: "Marine Hoses",
-      icon: Anchor,
+      iconUrl: "/icons/marine-hoses.png",
       description: "Durable, certified marine hoses and fittings for all types of fluid transfer, built to withstand harsh maritime environments.",
     },
     {
       name: "RAS Spares",
-      icon: Replace,
+      iconUrl: "/icons/ras-spares.png",
       description: "Specialized spares for Replenishment-At-Sea (RAS) systems, crucial for naval and maritime support operations.",
     },
     {
       name: "Pumps",
-      icon: Fan,
+      iconUrl: "/icons/pumps.png",
       description: "A wide range of industrial pumps for various applications, including centrifugal, diaphragm, and submersible types.",
     },
     {
       name: "Valves",
-      icon: SlidersHorizontal,
+      iconUrl: "/icons/valves.png",
       description: "High-performance industrial valves, including ball, gate, globe, and check valves for precise flow control.",
     },
     {
       name: "Mechanical Equipment",
-      icon: Wrench,
+      iconUrl: "/icons/mechanical-equipment.png",
       description: "Comprehensive solutions for mechanical equipment, including gearboxes, couplings, bearings, and transmission systems.",
     },
     {
       name: "Electrical Components",
-      icon: CircuitBoard,
+      iconUrl: "/icons/electrical-components.png",
       description: "Reliable electrical components such as motors, switches, sensors, and control panels for industrial automation.",
     },
     {
       name: "Hydraulic Systems",
-      icon: GitCommitHorizontal,
+      iconUrl: "/icons/hydraulic-systems.png",
       description: "Complete hydraulic systems and components, including cylinders, power packs, filters, and hydraulic fluids.",
     },
     {
       name: "Safety & Marine Supplies",
-      icon: LifeBuoy,
+      iconUrl: "/icons/safety-marine-supplies.png",
       description: "A full range of safety equipment and general marine supplies to ensure operational safety and compliance.",
     },
   ];

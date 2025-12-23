@@ -37,10 +37,14 @@ export default function ProductsPage() {
                 className="group flex flex-col text-center transition-all duration-300 hover:border-primary hover:shadow-xl"
               >
                 <CardHeader>
-                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                    {category.icon && (
-                      <category.icon className="h-8 w-8" />
-                    )}
+                  <div className="relative mx-auto mb-4 h-20 w-20 transition-transform duration-300 group-hover:scale-110">
+                    <Image
+                      src={category.iconUrl}
+                      alt={`${category.name} icon`}
+                      width={80}
+                      height={80}
+                      className="object-contain"
+                    />
                   </div>
                   <CardTitle className="font-headline text-2xl font-bold">
                     {category.name}

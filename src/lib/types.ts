@@ -12,7 +12,7 @@ export interface ClientCategory {
 
 export interface Product {
     name: string;
-    icon: LucideIcon;
+    iconUrl: string;
     description: string;
 }
 
