@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, Ship } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { useState } from 'react';
 
 import { Button } from '@/components/ui/button';
@@ -39,7 +39,6 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center gap-2">
-          <Ship className="h-6 w-6 text-primary" />
           <span className="font-bold sm:inline-block">
             Pushpa & Co.
           </span>
@@ -70,7 +69,6 @@ export function Header() {
                 className="mr-6 flex items-center gap-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                <Ship className="h-6 w-6 text-primary" />
                 <span className="font-bold">Pushpa & Co.</span>
               </Link>
               <div className="flex h-full flex-col justify-between pb-10">

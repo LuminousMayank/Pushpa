@@ -1,6 +1,5 @@
 
 import Link from 'next/link';
-import { Ship } from 'lucide-react';
 
 const navLinks = [
   { href: '/about', label: 'About' },
@@ -16,7 +15,6 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="flex flex-col items-center gap-4 md:items-start">
             <Link href="/" className="flex items-center gap-2">
-              <Ship className="h-7 w-7 text-primary" />
               <span className="text-xl font-bold">Pushpa & Co.</span>
             </Link>
             <p className="text-sm text-muted-foreground">
