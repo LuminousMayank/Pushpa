@@ -112,16 +112,16 @@ export default function AboutPage() {
       {/* Values Section */}
       <section id="values" className="bg-background py-16 md:py-24">
         <div className="container mx-auto">
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-3 md:grid-flow-row-dense">
             {values.map((value) => (
-              <div key={value.title} className="flex flex-col text-center">
+              <div key={value.title} className="flex flex-col text-center h-full">
                 <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-card">
                   {value.icon}
                 </div>
                 <h3 className="mb-2 font-headline text-2xl font-bold">
                   {value.title}
                 </h3>
-                <p className="text-muted-foreground">{value.description}</p>
+                <p className="text-muted-foreground flex-grow">{value.description}</p>
               </div>
             ))}
           </div>
@@ -134,7 +134,7 @@ export default function AboutPage() {
           <div className="space-y-6">
             <h2 className="font-headline text-3xl font-bold tracking-tight">Our Global Commitment</h2>
             <p className="text-lg text-muted-foreground">
-              As premier Merchant Exporters and General Traders, we are deeply embedded in the Marine, Defence, Power, and Manufacturing sectors. We specialize in supplying quality-driven products, delivering excellence and precision to our partners.
+              As premier Import / Export Merchant, we are deeply embedded in the Marine, Defence, Power, and Manufacturing sectors. We specialize in supplying quality-driven products, delivering excellence and precision to our partners.
             </p>
             <p className="text-lg text-muted-foreground">
               Adhering to all export regulations with complete transaction transparency, we foster a professional environment and build lasting client relationships. Our well-researched inventory and strategic supplier network give us a cutting edge on the global stage.
