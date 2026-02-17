@@ -1,6 +1,5 @@
 
 import { Mail, MapPin, Phone } from 'lucide-react';
-import { RfqForm } from '@/components/rfq-form';
 import { Card, CardContent } from '@/components/ui/card';
 
 export default function ContactPage() {
@@ -12,8 +11,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
-            We're here to help. Reach out to us directly or fill out the form
-            to request a quote.
+            We're here to help. Reach out to us directly for any inquiries.
           </p>
         </div>
       </section>
@@ -81,20 +79,6 @@ export default function ContactPage() {
               ></iframe>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="bg-card py-16 md:py-24">
-         <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="font-headline text-3xl font-bold tracking-tight md:text-4xl">
-              Request a Quote
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-              For specific requirements or bulk orders, please fill out our RFQ form.
-            </p>
-        </div>
-        <div className="container mx-auto max-w-4xl mt-12">
-          <RfqForm />
         </div>
       </section>
     </div>

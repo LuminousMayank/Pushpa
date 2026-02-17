@@ -19,7 +19,7 @@ export default function ProductsPage() {
         <div className="absolute inset-0 bg-black/60 dark:bg-black/70" />
         <div className="container z-10 mx-auto">
           <h1 className="font-headline text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl">
-            Comprehensive Products & Services
+            Comprehensive Products
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-white/80 md:text-xl">
             Explore our extensive range of high-quality OEM spare parts and

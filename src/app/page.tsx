@@ -23,7 +23,7 @@ const previewSections = [
     image: PlaceHolderImages.find(p => p.id === 'industries-preview'),
   },
   {
-    title: 'Products & Services',
+    title: 'Products',
     description: 'Explore our vast catalog of OEM parts and industrial supplies.',
     link: '/products',
     image: PlaceHolderImages.find(p => p.id === 'products-preview'),
@@ -58,11 +58,8 @@ export default function Home() {
              Trusted OEM Manufacturing & Global Procurement for over 30 Years.
             </span>
           </h1>
-          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+          <div className="flex justify-center">
             <Button asChild size="lg">
-              <Link href="/contact">Request a Quote</Link>
-            </Button>
-            <Button asChild size="lg" variant="secondary">
               <Link href="/products">
                 Explore Products <ArrowRight className="ml-2" />
               </Link>
