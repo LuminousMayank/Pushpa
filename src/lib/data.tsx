@@ -48,12 +48,12 @@ export const productCategories: Product[] = [
     {
       name: "Pumps",
       iconUrl: "/icons/pumps.png",
-      description: "A wide range of industrial pumps for various applications, including centrifugal, diaphragm, and submersible types.",
+      description: "A wide range of pumps of all kinds for industrial and marine applications.",
     },
     {
       name: "Valves",
       iconUrl: "/icons/valves.png",
-      description: "High-performance industrial valves, including ball, gate, globe, and check valves for precise flow control.",
+      description: "High-performance industrial and marine valves including ball, gate, globe and check valves for precise flow control",
     },
     {
       name: "Mechanical Equipment",
@@ -71,9 +71,9 @@ export const productCategories: Product[] = [
       description: "Complete hydraulic systems and components, including cylinders, power packs, filters, and hydraulic fluids.",
     },
     {
-      name: "Safety & Marine Supplies",
+      name: "Safety & Survival Equipment",
       iconUrl: "/icons/safety-marine-supplies.png",
-      description: "A full range of safety equipment and general marine supplies to ensure operational safety and compliance.",
+      description: "A full range of safety and survival equipment with general marine supplies to ensure operational safety and compliance.",
     },
   ];
 
