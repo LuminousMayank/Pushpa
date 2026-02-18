@@ -1,4 +1,3 @@
-
 import { Mail, MapPin, Phone } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -20,41 +19,54 @@ export default function ContactPage() {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
             <div className="space-y-8">
-               <div>
+              <div>
                 <h2 className="font-headline text-3xl font-bold">Get In Touch</h2>
-                <p className='mt-2 text-muted-foreground'>Our team is ready to assist you with any inquiries.</p>
+                <p className="mt-2 text-muted-foreground">Our team is ready to assist you with any inquiries.</p>
               </div>
 
               <div className="space-y-6">
-                <Card className='hover:border-primary transition-colors'>
-                  <CardContent className='flex items-center gap-4 p-6'>
+                <Card className="hover:border-primary transition-colors">
+                  <CardContent className="flex items-center gap-4 p-6">
                     <Phone className="h-8 w-8 flex-shrink-0 text-primary" />
-                    <div>
-                      <h3 className='text-lg font-semibold'>Phone</h3>
-                      <a href="tel:+912212345678" className="text-muted-foreground hover:text-primary transition-colors">+91 22 1234 5678</a>
+                    <div className="flex flex-col">
+                      <h3 className="text-lg font-semibold">Phone</h3>
+                      <a
+                        href="tel:+919440878104"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        +91 94408 78104
+                      </a>
+                      <a
+                        href="tel:+918913555763"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        +91 891 355 5763
+                      </a>
                     </div>
                   </CardContent>
                 </Card>
-                <Card className='hover:border-primary transition-colors'>
-                   <CardContent className='flex items-center gap-4 p-6'>
+                <Card className="hover:border-primary transition-colors">
+                  <CardContent className="flex items-center gap-4 p-6">
                     <Mail className="h-8 w-8 flex-shrink-0 text-primary" />
-                     <div>
-                      <h3 className='text-lg font-semibold'>Email</h3>
-                      <a href="mailto:info@pushpa.com" className="text-muted-foreground hover:text-primary transition-colors">info@pushpa.com</a>
+                    <div>
+                      <h3 className="text-lg font-semibold">Email</h3>
+                      <a href="mailto:info@pushpa.com" className="text-muted-foreground hover:text-primary transition-colors">
+                        info@pushpa.com
+                      </a>
                     </div>
                   </CardContent>
                 </Card>
-                 <Card className='hover:border-primary transition-colors'>
-                   <CardContent className='flex items-start gap-4 p-6'>
+                <Card className="hover:border-primary transition-colors">
+                  <CardContent className="flex items-start gap-4 p-6">
                     <MapPin className="mt-1 h-8 w-8 flex-shrink-0 text-primary" />
                     <div>
-                      <h3 className='text-lg font-semibold'>Office Address</h3>
+                      <h3 className="text-lg font-semibold">Office Address</h3>
                       <address className="mt-1 not-italic text-muted-foreground">
-                        PUSHPA and CO
+                        Pushpa & Co.
                         <br />
-                        1/114/12 Flat No 302, Sri Aurobindo Heights,
+                        1-114-12/6, Suite No.302, Sri Aurobindo Heights,
                         <br />
-                        M V P Colony, Chinawaltair,
+                        Sector-12, M V P Colony,
                         <br />
                         Visakhapatnam, Andhra Pradesh 530017,
                         <br />
