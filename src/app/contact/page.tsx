@@ -79,14 +79,14 @@ export default function ContactPage() {
             </div>
             <div className="overflow-hidden rounded-lg shadow-xl min-h-[400px] md:min-h-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.563914831961!2d83.33230907588145!3d17.73907408323055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39436e4b868881%3A0x13c69027c36a44ca!2sSri%20Aurobindo%20St%2C%20Sector%201%2C%20MVP%20Colony%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530017%2C%20India!5e0!3m2!1sen!2sus!4v1717696347313!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.156229919281!2d83.3373021!3d17.7372764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3944a9c6271aef%3A0x7dd4394261936bb9!2sSri%20Aurobindo%20Heights!5e0!3m2!1sen!2sin!4v1771405798141!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
-                allowFullScreen={false}
+                allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Google map of Pushpa & Co. location"
+                title="Google map of Pushpa & Co. location at Sri Aurobindo Heights"
                 className="h-full w-full"
               ></iframe>
             </div>
