@@ -5,6 +5,14 @@ export const clientCategories: ClientCategory[] = [
         name: "Defence",
         clients: [
             { name: "Indian Navy", logoUrl: "/logos/indian-navy.svg" },
+            { name: "Indian Coast Guard", logoUrl: "/logos/indian-coast-guard.svg" },
+        ],
+    },
+    {
+        name: "Marine & Shipbuilding",
+        clients: [
+            { name: "Hindustan Shipyard Limited", logoUrl: "/logos/hsl.png" },
+            { name: "L&T Shipbuilding", logoUrl: "/logos/l-and-t.png" },
         ],
     },
     {
